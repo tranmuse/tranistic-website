@@ -12,9 +12,11 @@ const Navbar = () => {
     setNav(!nav);
   }
   return (
-    <div className='fixed w-full h-20 shadow-sm shadow-zinc/20 z-[100]'>
+    <div className='fixed md:px-40 sm:px-20 w-full h-20 shadow-sm shadow-zinc/20 z-[100] '>
       <div className='flex items-center justify-between w-full h-full px-4 2xl:px-2 mx-4'>
-        <div className=''><Image src='/logo.png' alt="Tranistic Logo" width='150' height='215'/></div>
+        <div className=''>
+          <Image src='/logo.png' alt="Tranistic Logo" width='80' height='80'/>
+        </div>
         <div className='grow'></div>
         <div className='mx-10'>
           <ul className='hidden md:flex'>
@@ -43,13 +45,14 @@ const Navbar = () => {
           }>
             
             <div className='flex w-full items-center justify-between'>
-              <Image src='/logo.png' alt='Tranistic logo' width='200' height='1000'/>
+              <Image src='/logo.png' alt='Tranistic logo' width='200' height='200'/>
               
               <div onClick ={handleNav} className='p-2 cursor-pointer hovereffect'>
                 <AiOutlineClose />
               </div>
             </div>
             <div className='border-b border-neutral-800 my-7 py-2'>
+              <h1>TRANISTIK</h1>
               <p className=' text-md py-4 w-[85%] md:w-[90%] opacity-70'>AI Artist | Motion Graphic Designer</p>
             </div>
             <div className='flex flex-col'>
