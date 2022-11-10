@@ -8,7 +8,7 @@ function Main() {
             
             <div className='basis-1/2 md:mx-2 mt-40 md:mt-0 leading-loose'>
                 <h1 className='py-4 uppercase'>Tranistik</h1>
-                <p className=" text-md tracking-widest">Guess what you can find here. AI Arts, Motion Graphics, and a hint of me.  </p>
+                <p className=" text-md tracking-widest">AI Arts, Motion Graphics, and a hint of me.  </p>
             </div>
             <div className='basis-1/2 md:mx-2'>
               <Image src='/glowgirl.png' alt='Tranistic logo' width='1000' height='1000'/>
