@@ -27,7 +27,7 @@
     }
 
     button{
-        @apply shadow-xl shadow-gray-300 uppercase bg-gradient-to-r from-[#7a818d] to-[#e8f0f5]
+        @apply shadow-xl uppercase bg-gradient-to-r from-[#7a818d] to-[#e8f0f5]
     }
 
     .hovereffect {
