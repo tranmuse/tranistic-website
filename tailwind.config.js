@@ -7,9 +7,6 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors:{
-      'dark-background': '',
-    },
     extend: {
       fontFamily: {
         Orbitron: ["Orbitron", ...defaultTheme.fontFamily.mono],

@@ -7,7 +7,7 @@ function Main() {
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center flex-col md:flex-row'>
             
             <div className='basis-1/2 md:mx-2 mt-40 md:mt-0 leading-loose'>
-                <h1 className='py-4 uppercase'>Tranistic</h1>
+                <h1 className='py-4 uppercase'>Tranistik</h1>
                 <p className=" text-md tracking-widest">AI Arts, Motion Graphics, and a hint of me.  </p>
             </div>
             <div className='basis-1/2 md:mx-2'>
