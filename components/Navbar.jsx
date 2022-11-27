@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className='fixed md:px-40 sm:px-20 w-full h-20 shadow-sm shadow-zinc/20 z-[100] '>
       <div className='flex items-center justify-between w-full h-full px-4 2xl:px-2 mx-4'>
         <div className=''>
-          <Image src='/logo.png' alt="Tranistic Logo" width='80' height='80'/>
+          <Image src='/logo.png' alt="TranMuse Logo" width='80' height='80'/>
         </div>
         <div className='grow'></div>
         <div className='mx-10'>
@@ -45,14 +45,14 @@ const Navbar = () => {
           }>
             
             <div className='flex w-full items-center justify-between'>
-              <Image src='/logo.png' alt='Tranistic logo' width='200' height='200'/>
+              <Image src='/logo.png' alt='TranMuse logo' width='200' height='200'/>
               
               <div onClick ={handleNav} className='p-2 cursor-pointer hovereffect'>
                 <AiOutlineClose />
               </div>
             </div>
             <div className='border-b border-neutral-800 my-7 py-2'>
-              <h1>TRANISTIK</h1>
+              <h1>TranMuse</h1>
               <p className=' text-md py-4 w-[85%] md:w-[90%] opacity-70'>AI Artist | Motion Graphic Designer</p>
             </div>
             <div className='flex flex-col'>
@@ -74,24 +74,24 @@ const Navbar = () => {
               <p className='opacity-50'>Let's Connect</p>
               <div className='flex flex-row items-center justify-between my-4 w-full sm:w-[80]'>
                 <div className='p-2 mr-2 cursor-pointer hovereffect'>
-                  <FaLinkedinIn />
+                  <FaTwitter />
+                </div>
+                <div className='p-2 m-2 cursor-pointer hovereffect'>
+                  <GrPinterest />
+                </div>
+                <div className='p-2 m-2 cursor-pointer hovereffect'>
+                  <FaDribbble />
                 </div>
                 <div className='p-2 m-2 cursor-pointer hovereffect'>
                   <FaGithub />
                 </div>
-                <div className='p-2 m-2 cursor-pointer hovereffect'>
-                  <FaFacebookF />
-                </div>
-                <div className='p-2 m-2 cursor-pointer hovereffect'>
-                  <FaTwitter />
-                </div>
               </div>
               <div className='flex flex-row items-center justify-between my-4 w-full sm:w-[80]'>
                 <div className='p-2 mr-2 cursor-pointer hovereffect'>
-                  <SiInstagram />
+                  <FaYoutube />
                 </div>
                 <div className='p-2 m-2 cursor-pointer hovereffect'>
-                  <GrPinterest />
+                  <FaVimeoSquare />
                 </div>
                 <div className='p-2 m-2 cursor-pointer hovereffect'>
                   <FaBehance />
@@ -100,7 +100,7 @@ const Navbar = () => {
                   <FaDribbble />
                 </div>
               </div>
-              <div className='flex flex-row items-center justify-between my-4 w-full sm:w-[80]'>
+              {/* <div className='flex flex-row items-center justify-between my-4 w-full sm:w-[80]'>
                 <div className='p-2 mr-2 cursor-pointer hovereffect'>
                   <FaYoutube />
                 </div>
@@ -113,7 +113,7 @@ const Navbar = () => {
                 <div className='p-2 m-2 cursor-pointer hovereffect'>
                   <SiGumroad />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           </div>
