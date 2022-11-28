@@ -2,8 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
-import {FaGithub, FaTwitter, FaBehance, FaYoutube, FaVimeoSquare, FaDribbble} from 'react-icons/fa'
-import {SiInstagram} from 'react-icons/si'
+import {FaGithub, FaTwitter, FaYoutube, FaVimeoSquare, FaDribbble} from 'react-icons/fa'
+import {SiInstagram, SiRedbubble} from 'react-icons/si'
 import {GrPinterest} from 'react-icons/gr'
 
 const Navbar = () => {
@@ -73,32 +73,48 @@ const Navbar = () => {
             <div className='mt-5 py-4 border-t border-neutral-800'>
               <p className='opacity-50'>Let's Connect</p>
               <div className='flex flex-row items-center justify-between my-4 w-full sm:w-[80]'>
-                <div className='p-2 mr-2 cursor-pointer hovereffect'>
-                  <FaTwitter />
-                </div>
-                <div className='p-2 m-2 cursor-pointer hovereffect'>
-                  <SiInstagram />
-                </div>
-                <div className='p-2 m-2 cursor-pointer hovereffect'>
-                  <GrPinterest />
-                </div>
-                <div className='p-2 m-2 cursor-pointer hovereffect'>
-                  <FaDribbble />
-                </div>
+                <Link href='https://twitter.com/tranmuse'>
+                  <div className='p-2 mr-2 cursor-pointer hovereffect'>
+                    <FaTwitter />
+                  </div>
+                </Link>
+                <Link href='https://www.instagram.com/tranmuse/'>
+                  <div className='p-2 m-2 cursor-pointer hovereffect'>
+                    <SiInstagram />
+                  </div>
+                </Link>
+                <Link href='https://www.instagram.com/tranmuse/'>
+                  <div className='p-2 m-2 cursor-pointer hovereffect'>
+                    <GrPinterest />
+                  </div>
+                </Link>
+                <Link href='https://dribbble.com/tranmuse'>
+                  <div className='p-2 m-2 cursor-pointer hovereffect'>
+                    <FaDribbble />
+                  </div>
+                </Link>
               </div>
               <div className='flex flex-row items-center justify-between my-4 w-full sm:w-[80]'>
-                <div className='p-2 mr-2 cursor-pointer hovereffect'>
-                  <FaYoutube />
-                </div>
-                <div className='p-2 m-2 cursor-pointer hovereffect'>
-                  <FaVimeoSquare />
-                </div>
-                <div className='p-2 m-2 cursor-pointer hovereffect'>
-                  <FaGithub />
-                </div>
-                <div className='p-2 m-2 cursor-pointer hovereffect'>
-                  <FaBehance />
-                </div>
+                <Link href='https://www.youtube.com/@tranmuse'>
+                  <div className='p-2 mr-2 cursor-pointer hovereffect'>
+                    <FaYoutube />
+                  </div>
+                </Link>
+                <Link href='https://vimeo.com/tranmuse'>
+                  <div className='p-2 m-2 cursor-pointer hovereffect'>
+                    <FaVimeoSquare />
+                  </div>
+                </Link>
+                <Link href='https://github.com/tranmuse'>
+                  <div className='p-2 m-2 cursor-pointer hovereffect'>
+                    <FaGithub />
+                  </div>
+                </Link>
+                <Link href='https://www.redbubble.com/people/TranMuse/shop?asc=u'>
+                  <div className='p-2 m-2 cursor-pointer hovereffect'>
+                    <SiRedbubble />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
