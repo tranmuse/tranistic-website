@@ -2,8 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
-import {FaGithub, FaLinkedinIn, FaTwitter, FaFacebookF, FaBehance, FaYoutube, FaVimeoSquare, FaDribbble, FaPatreon} from 'react-icons/fa'
-import {SiGumroad, SiInstagram} from 'react-icons/si'
+import {FaGithub, FaTwitter, FaBehance, FaYoutube, FaVimeoSquare, FaDribbble} from 'react-icons/fa'
+import {SiInstagram} from 'react-icons/si'
 import {GrPinterest} from 'react-icons/gr'
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className='fixed md:px-40 sm:px-20 w-full h-20 shadow-sm shadow-zinc/20 z-[100] '>
       <div className='flex items-center justify-between w-full h-full px-4 2xl:px-2 mx-4'>
         <div className=''>
-          <Image src='/logo.png' alt="TranMuse Logo" width='80' height='80'/>
+          <Image src='/logo.png' alt="TranMuse Logo" width='50' height='50'/>
         </div>
         <div className='grow'></div>
         <div className='mx-10'>
@@ -45,7 +45,7 @@ const Navbar = () => {
           }>
             
             <div className='flex w-full items-center justify-between'>
-              <Image src='/logo.png' alt='TranMuse logo' width='200' height='200'/>
+              <Image src='/logo.png' alt='TranMuse logo' width='100' height='100'/>
               
               <div onClick ={handleNav} className='p-2 cursor-pointer hovereffect'>
                 <AiOutlineClose />
@@ -53,12 +53,12 @@ const Navbar = () => {
             </div>
             <div className='border-b border-neutral-800 my-7 py-2'>
               <h1>TranMuse</h1>
-              <p className=' text-md py-4 w-[85%] md:w-[90%] opacity-70'>AI Artist | Motion Graphic Designer</p>
+              <p className=' text-md pt-2 pb-4 w-[85%] md:w-[90%] opacity-70'>AI Artist | Motion Graphic Designer</p>
             </div>
             <div className='flex flex-col'>
-              <ul className='uppercase mb-10'>
+              <ul className='uppercase'>
                 <Link href='/'>
-                <li className='py-4 font-bold text-lg'>Home</li>
+                <li className='pb-4 font-bold text-lg'>Home</li>
                 </Link>
                 <Link href='/'>
                 <li className='py-4 font-bold text-lg'>Works</li>
@@ -70,11 +70,14 @@ const Navbar = () => {
                 <li className='py-4 font-bold text-lg'>Contact</li>
                 </Link>
               </ul>
-            <div className='mt-5 pt-4 border-t border-neutral-800'>
+            <div className='mt-5 py-4 border-t border-neutral-800'>
               <p className='opacity-50'>Let's Connect</p>
               <div className='flex flex-row items-center justify-between my-4 w-full sm:w-[80]'>
                 <div className='p-2 mr-2 cursor-pointer hovereffect'>
                   <FaTwitter />
+                </div>
+                <div className='p-2 m-2 cursor-pointer hovereffect'>
+                  <SiInstagram />
                 </div>
                 <div className='p-2 m-2 cursor-pointer hovereffect'>
                   <GrPinterest />
@@ -82,9 +85,6 @@ const Navbar = () => {
                 <div className='p-2 m-2 cursor-pointer hovereffect'>
                   <FaDribbble />
                 </div>
-                <div className='p-2 m-2 cursor-pointer hovereffect'>
-                  <FaGithub />
-                </div>
               </div>
               <div className='flex flex-row items-center justify-between my-4 w-full sm:w-[80]'>
                 <div className='p-2 mr-2 cursor-pointer hovereffect'>
@@ -94,26 +94,12 @@ const Navbar = () => {
                   <FaVimeoSquare />
                 </div>
                 <div className='p-2 m-2 cursor-pointer hovereffect'>
+                  <FaGithub />
+                </div>
+                <div className='p-2 m-2 cursor-pointer hovereffect'>
                   <FaBehance />
                 </div>
-                <div className='p-2 m-2 cursor-pointer hovereffect'>
-                  <FaDribbble />
-                </div>
               </div>
-              {/* <div className='flex flex-row items-center justify-between my-4 w-full sm:w-[80]'>
-                <div className='p-2 mr-2 cursor-pointer hovereffect'>
-                  <FaYoutube />
-                </div>
-                <div className='p-2 m-2 cursor-pointer hovereffect'>
-                  <FaVimeoSquare />
-                </div>
-                <div className='p-2 m-2 cursor-pointer hovereffect'>
-                  <FaPatreon />
-                </div>
-                <div className='p-2 m-2 cursor-pointer hovereffect'>
-                  <SiGumroad />
-                </div>
-              </div> */}
             </div>
           </div>
           </div>

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Tranistic</title>
+        <title>TranMuse</title>
         <meta name="description" content="AI Artist | Motion Graphic Designer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
