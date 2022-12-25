@@ -12,22 +12,25 @@ const Navbar = () => {
     setNav(!nav);
   }
   return (
-    <div className='fixed md:px-40 sm:px-20 w-full h-20 shadow-sm shadow-zinc/20 z-[100] '>
-      <div className='flex items-center justify-between w-full h-full px-4 2xl:px-2 mx-4'>
-        <div className=''>
+    <div className='fixed max-w-[1240px] justify-center h-20 shadow-sm shadow-slate/20 z-[100] darkbackground'>
+      <div className='flex flex-wrap items-center justify-between h-full px-4 2xl:px-2 mx-4'>
+        <div className='flex-none'>
           <Image src='/logo.png' alt="TranMuse Logo" width='50' height='50'/>
         </div>
         <div className='grow'></div>
         <div className='mx-10'>
-          <ul className='hidden md:flex'>
+          <ul className='hidden md:flex md:'>
             <Link href='/'>
               <li className='ml-10 text-md uppercase font-bold'><span class="link link-underline link-underline-white py-2">Home</span></li>
             </Link>
             <Link href='/'>
-              <li className='ml-10 text-md uppercase font-bold'><span class="link link-underline link-underline-white py-2">Projects</span></li>
+              <li className='ml-10 text-md uppercase font-bold'><span class="link link-underline link-underline-white py-2">About</span></li>
             </Link>
             <Link href='/'>
-              <li className='ml-10 text-md uppercase font-bold'><span class="link link-underline link-underline-white py-2">About</span></li>
+              <li className='ml-10 text-md uppercase font-bold'><span class="link link-underline link-underline-white py-2">Works</span></li>
+            </Link>
+            <Link href='/'>
+              <li className='ml-10 text-md uppercase font-bold'><span class="link link-underline link-underline-white py-2">Shop</span></li>
             </Link>
             <Link href='/'>
               <li className='ml-10 text-md uppercase font-bold'><span class="link link-underline link-underline-white py-2">Contact</span></li>
@@ -57,17 +60,20 @@ const Navbar = () => {
             </div>
             <div className='flex flex-col'>
               <ul className='uppercase'>
-                <Link href='/'>
-                <li className='pb-4 font-bold text-lg'>Home</li>
+                <Link href='/Main'>
+                <li className='pb-2 font-bold text-lg'>Home</li>
                 </Link>
                 <Link href='/'>
-                <li className='py-4 font-bold text-lg'>Works</li>
+                <li className='py-2 font-bold text-lg'>About</li>
                 </Link>
                 <Link href='/'>
-                <li className='py-4 font-bold text-lg'>About</li>
+                <li className='py-2 font-bold text-lg'>Works</li>
+                </Link>
+                <Link href='/Projects'>
+                <li className='py-2 font-bold text-lg'>Shop</li>
                 </Link>
                 <Link href='/'>
-                <li className='py-4 font-bold text-lg'>Contact</li>
+                <li className='py-2 font-bold text-lg'>Contact</li>
                 </Link>
               </ul>
             <div className='mt-5 py-4 border-t border-neutral-800'>
@@ -110,7 +116,7 @@ const Navbar = () => {
                     <FaGithub />
                   </div>
                 </Link>
-                <Link href='https://www.redbubble.com/people/TranMuse/shop?asc=u'>
+                <Link href='https://www.redbubble.com/people/TranMuse/shop'>
                   <div className='p-2 m-2 cursor-pointer hovereffect'>
                     <SiRedbubble />
                   </div>

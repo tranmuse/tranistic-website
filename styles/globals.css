@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply bg-[rgb(3,2,10)] text-[#cbdce3] tracking-wide
+        @apply bg-[rgb(3,2,10)] text-[#cbdce3] tracking-wide text-slate-400
     }
     h1, h2, h3, h4, h5, h6 {
         @apply font-bold font-Saira
@@ -18,20 +18,27 @@
         @apply text-3xl sm:text-4xl
     }
 
+    h3{
+        @apply text-xl sm:text-2xl
+    }
+
     p{
-        @apply font-Saira
+        @apply font-Saira py-2 text-lg
     }
 
     li {
-        @apply cursor-pointer
+        @apply cursor-pointer font-Saira
     }
 
     button{
         @apply shadow-xl uppercase bg-gradient-to-r from-[#7a818d] to-[#e8f0f5]
     }
+    .darkbackground {
+        @apply bg-[rgb(3,2,10)]
+    }
 
     .hovereffect {
-        @apply shadow-md shadow-neutral-500/30 border-2 border-transparent border-r-neutral-800 border-b-neutral-800 hover:border-2 hover:border-neutral-600 hover:scale-95 hover:transition duration-300 ease-out 
+        @apply shadow-md shadow-slate-500/30 border-2 border-transparent border-r-slate-800 border-b-slate-800 hover:border-2 hover:border-slate-600 hover:scale-95 hover:transition duration-300 ease-out 
     }
     .link-underline {
 		border-bottom-width: 0;
